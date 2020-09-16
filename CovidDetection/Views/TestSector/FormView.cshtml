@@ -1,0 +1,25 @@
+﻿@model Form
+
+@{
+    ViewData["Title"] = "FormView";
+}
+
+<h1>Test Results Form</h1>
+
+<form method="POST" action="/TestSector/Collect">
+    <label for="siteID">Enter in your result and site ID</label>
+    <input type="text" id="siteID" name = "siteID" placeholder="Test Site ID goes here" />
+
+    <p>Enter the total number of tests</p>
+    <input type="text" id="testCount" name="testCount" placeholder="Tests">
+    <label for="testCount">Test Count</label><br>
+
+
+    <p>Enter the number of positive results</p>
+
+    <input type="text" id="positiveCount" name="positiveCount" placeholder="Positive Results">
+    <label for="positiveCount">Positive Count</label><br>
+
+    <p>Click submit to enter results</p>
+    <input type="submit"/>
+</form>
